@@ -9,19 +9,39 @@
         <servlet-name>FirstServlet</servlet-name>
         <servlet-class>servletPractice.Servlet.FirstServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/first</url-pattern>
     </servlet-mapping>
 
+
     <servlet>
         <servlet-name>GetServlet</servlet-name>
         <servlet-class>servletPractice.Servlet.GetServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>GetServlet</servlet-name>
         <url-pattern>/get</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CheckBox</servlet-name>
+        <servlet-class>servletPractice.Servlet.CheckBoxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckBox</servlet-name>
+        <url-pattern>/CheckBox</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReadParams</servlet-name>
+        <servlet-class>servletPractice.Servlet.ReadParamsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReadParams</servlet-name>
+        <url-pattern>/ReadParams</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

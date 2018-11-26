@@ -14,7 +14,8 @@ public class FirstServlet extends HttpServlet {
 
         // 实际的逻辑是在这里
         PrintWriter out = response.getWriter();
-        String html = "<h1>" + "Hello Servlet!" + "</h1>" +
+        String html =
+                "<h1>" + "Hello Servlet!" + "</h1>" +
                 "<p>" + "My First ServletDemo" + "</p>";
         out.println(html);
     }
