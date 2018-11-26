@@ -7,24 +7,23 @@ import javax.servlet.http.*;
 public class FirstServlet extends HttpServlet {
 
     @Override
-    public void init() throws ServletException {
-        super.init();
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        // 设置响应内容类型
+        response.setContentType("text/html");
+
+        // 实际的逻辑是在这里
+        PrintWriter out = response.getWriter();
+        String html = "<h1>" + "Hello Servlet!" + "</h1>" +
+                "<p>" + "My First ServletDemo" + "</p>";
+        out.println(html);
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doGet(request,response);
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
-    }
-
-    @Override
-    public void destroy() {
-        super.destroy();
-    }
 }
 /**
  * @program: servletPractice
